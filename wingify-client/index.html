@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="lib/bootstrap/bootstrap.min.css" rel="stylesheet">
+	<link href="lib/bootstrap/bootstrap-theme.min.css" rel="stylesheet">
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/bootstrap/bootstrap.min.js"></script>
+    <link href="styles/my-style.css" rel="stylesheet">
+    <script src="./js/my-script.js"></script>
+</head>
+<body>
+<script src="./lib/socket.io.js"></script>
+<script src="./js/socket-conn.js"></script>
+<div class="navbar">
+<a href = "#notifications" data-toggle="collapse" aria-expanded="true" aria-controls="notifications" id="bell-icon" class="collapsed"/>
+	<div class="bell-icon">
+		<img src = "./img/bell.png" id="bell" /><div class="circle num-unread">0</div>
+	</div>
+</a>
+</div>
+<div class="collapse" id = "notifications">
+	<div class="notifications-panel">
+	<div class="notifications-heading"><span>Notifications</span><span class="circle panel-circle num-unread">0</span>
+	</div>
+	<div class="notifications-msgs" id="notifications-msgs">
+	</div>
+	</div>
+	</div>
+</div>
+<script src="./js/my-events.js"></script>
+</body>
+</html>
